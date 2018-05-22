@@ -17,10 +17,14 @@ ul, li {
 	font-size: 10pt;
 	color: #333;
 }
+a:focus{
+	outline: 5px solid black;
+}
 a {
-	color: orange;
+	color: gold;
 	text-decoration: none;
 }
+
 a:hover, a:focus {
 	color: #3397db;
 	text-decoration: none;
