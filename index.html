@@ -18,12 +18,12 @@
       <div id="map"></div>
     </section>
     <section>
-      <div class="filter-options">
-        <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+      <div class="filter-options" aria-label="container for drop down menus">
+        <h2 aria-label="header for drop down menus used for result filteration">Filter Results</h2>
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="neighborhood drop down menu">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-label="cuisine drop down menu">
           <option value="all">All Cuisines</option>
         </select>
       </div>
