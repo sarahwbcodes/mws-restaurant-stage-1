@@ -1,24 +1,10 @@
-//first trial
+//service worker registeration
 if ('serviceWorker' in navigator){
-  .register ('./sw.js' , {scope : './'})
+  navigator.serviceWorker.register('/sw.js')
   .then(function(registeration){
-    console.log("registration successful", registration);
+    console.log(registration);
   })
   .catch(function(err){
-    console.log("error: registration unsuccessful", err);
+    console.log(err);
   })
-}
-
-
-//second trial
-/*if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}*/
+};
