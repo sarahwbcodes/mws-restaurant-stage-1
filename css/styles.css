@@ -42,6 +42,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+
 }
 #footer {
   background-color: #444;
@@ -55,12 +56,13 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
-  height: 80px;
+  height: 50px;
   background-color: #252831;
   text-align:center;
 }
 nav h1 {
   margin: auto;
+	padding: 25px;
 }
 nav h1 a {
   color: #fff;
@@ -68,6 +70,8 @@ nav h1 a {
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 #breadcrumb {
     padding: 10px 40px 16px;
@@ -110,7 +114,6 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
   background-color: #3397DB;
   align-items: center;
 }
@@ -277,3 +280,5 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/*Media Queries
